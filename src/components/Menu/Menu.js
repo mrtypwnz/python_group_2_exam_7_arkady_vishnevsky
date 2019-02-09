@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Menu(props) {
-    return <div className="panel">
+    return <div className="Menu">
         <div>
             {props.children}
         </div>

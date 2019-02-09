@@ -5,14 +5,14 @@ import { Card, CardText, CardBody,
 function Product(props) {
     return (
         <div>
-                  <Card className="d-inline-flex col-lg-4">
-                    <CardBody>
-                          <CardTitle>{props.children}</CardTitle>
-                          <CardSubtitle>{props.name}</CardSubtitle>
-                          <CardText>Price: {props.price}</CardText>
-                          <Button onClick={props.addFood}>Добавить</Button>
-                    </CardBody>
-                  </Card>
+          <Card>
+            <CardBody>
+                  <CardTitle>{props.children}</CardTitle>
+                  <CardSubtitle>{props.name}</CardSubtitle>
+                  <CardText>Price: {props.price}</CardText>
+                  <Button onClick={() => props.changeProduct(props.name, +1)}>Add to stash</Button>
+            </CardBody>
+          </Card>
         </div>
     );
 
